@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
-import Link from './Custom-Routes/components/Link';
-import { useNavigate } from './Custom-Routes/hooks/useNavigate';
+import Link from './custom-react-route/components/Link';
+import { useNavigate } from './custom-react-route/hooks/useNavigate';
 
 const Navigation = () => {
   const navigate = useNavigate();
@@ -14,10 +14,16 @@ const Navigation = () => {
         <h1 className={'w-fit text-2xl'}>React Router Setting</h1>
       </Link>
       <nav className={'w-fit flex gap-5'}>
-        <button className={'text-sm'} onClick={() => navigate('/1')}>
+        <button
+          className={'text-sm'}
+          onClick={() => navigate('/react-router/1')}
+        >
           Go to Route1
         </button>
-        <button className={'text-sm'} onClick={() => navigate('/2')}>
+        <button
+          className={'text-sm'}
+          onClick={() => navigate('/react-router/2')}
+        >
           Go to Route2
         </button>
       </nav>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../Navigation';
-import Routes from '../Custom-Routes/components/Routes';
-import Route from '../Custom-Routes/components/Route';
+import Routes from '../custom-react-route/components/Routes';
+import Route from '../custom-react-route/components/Route';
 import App from '../App';
 import Route1 from '../pages/Route1';
 import Route2 from '../pages/Route2';
@@ -11,9 +11,9 @@ const Layout = () => {
     <>
       <Navigation />
       <Routes>
-        <Route path={'/'} element={<App />} />
-        <Route path={'/1'} element={<Route1 />} />
-        <Route path={'/2'} element={<Route2 />} />
+        <Route path={'/react-router/'} element={<App />} />
+        <Route path={'/react-router/1'} element={<Route1 />} />
+        <Route path={'/react-router/2'} element={<Route2 />} />
       </Routes>
     </>
   );

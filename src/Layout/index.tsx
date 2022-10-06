@@ -11,9 +11,9 @@ const Layout = () => {
     <>
       <Navigation />
       <Routes>
-        <Route path={'/react-router/'} element={<App />} />
-        <Route path={'/react-router/1'} element={<Route1 />} />
-        <Route path={'/react-router/2'} element={<Route2 />} />
+        <Route path={'/'} element={<App />} />
+        <Route path={'/1'} element={<Route1 />} />
+        <Route path={'/2'} element={<Route2 />} />
       </Routes>
     </>
   );

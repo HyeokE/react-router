@@ -8,12 +8,9 @@ export const useNavigate = () => {
     (inputPath: string) => {
       if (path.pathname === inputPath) return;
       history.pushState({}, '', inputPath);
-      setPath({
-        pathname: location.pathname,
-        search: location.search,
-        hash: location.hash,
-        location: window.location,
-      });
+      const newObj = Object.assign({}, location);
+
+      setPath(newObj);
     },
     [path],
   );

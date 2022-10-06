@@ -1,12 +1,7 @@
 import React from 'react';
 
 export const useLocation = () => {
-  const [path, setPath] = React.useState({
-    pathname: window.location.pathname,
-    search: window.location.search,
-    hash: window.location.hash,
-    location: window.location,
-  });
+  const [path, setPath] = React.useState(window.location);
 
   React.useEffect(() => {
     window.addEventListener('popstate', () => {
